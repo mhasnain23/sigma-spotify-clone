@@ -193,12 +193,12 @@ async function main() {
     // Add event listener to mute the track
     document.querySelector(".volume>img").addEventListener("click", e=>{ 
         if(e.target.src.includes("/img/volume.svg")){
-            e.target.src = e.target.src.replace("/img/volume.svg", "img/mute.svg")
+            e.target.src = e.target.src.replace("/img/volume.svg", "/img/mute.svg")
             currentSong.volume = 0;
             document.querySelector(".range").getElementsByTagName("input")[0].value = 0;
         }
         else{
-            e.target.src = e.target.src.replace("img/mute.svg", "img/volume.svg")
+            e.target.src = e.target.src.replace("/img/mute.svg", "/img/volume.svg")
             currentSong.volume = .10;
             document.querySelector(".range").getElementsByTagName("input")[0].value = 10;
         }
