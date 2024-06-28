@@ -1,0 +1,14 @@
+{
+  "name": "sigma-spotify-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^5.3.1"
+  }
+}
