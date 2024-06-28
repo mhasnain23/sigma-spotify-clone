@@ -65,7 +65,7 @@ const playMusic = (track, pause = false) => {
     currentSong.src = `/${currFolder}/` + track
     if (!pause) {
         currentSong.play()
-        play.src = "/img/pause.svg"
+        play.src = "img/pause.svg"
     }
     document.querySelector(".songinfo").innerHTML = decodeURI(track)
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
