@@ -174,7 +174,7 @@ header>* {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    max-height: 60vh;
+    max-height: 80vh;
     overflow-y: auto;
 }
 
@@ -405,7 +405,7 @@ header>* {
     }
 
     .playbar {
-        width: calc(100vw - 70px);
+        width: calc(100vw - 60px);
     }
 
     .seekbar {
@@ -413,6 +413,7 @@ header>* {
     }
 
     .hamburger {
+        cursor: pointer;
         display: block;
     }
 
@@ -444,5 +445,17 @@ header>* {
 @media (max-width: 500px) {
     .card{
         width: 84vw;
+    }
+
+    .buttons{
+        padding: 0;
+    }
+
+    header{
+        padding-left: 0;
+    }
+
+    .playbar{
+        width: calc(100vw - 60px);
     }
 }
